@@ -5,22 +5,22 @@
             <div class="tf-quick-view-image">
                 <div class="wrap-quick-view wrapper-scroll-quickview">
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="beige">
-                        <img class="lazyload" data-src="images/products/womens/women-1.jpg" src="images/products/womens/women-1.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="beige">
-                        <img class="lazyload" data-src="images/products/womens/women-2.jpg" src="images/products/womens/women-2.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="gray">
-                        <img class="lazyload" data-src="images/products/womens/women-3.jpg" src="images/products/womens/women-3.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="gray">
-                        <img class="lazyload" data-src="images/products/womens/women-4.jpg" src="images/products/womens/women-4.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="grey">
-                        <img class="lazyload" data-src="images/products/womens/women-19.jpg" src="images/products/womens/women-19.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                     <div class="quickView-item item-scroll-quickview" data-scroll-quickview="grey">
-                        <img class="lazyload" data-src="images/products/womens/women-20.jpg" src="images/products/womens/women-20.jpg" alt="">
+                        <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="">
                     </div>
                 </div>
             </div>

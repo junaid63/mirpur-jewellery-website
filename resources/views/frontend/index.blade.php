@@ -7,15 +7,43 @@
 @endsection
 
 @section('css')
+    <style>
+        .slider{
+            height: 750px;
+        }
+
+        .box-title-slider  div,p{
+            color:white;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+            pointer-events: none; /* Ensure video controls are not blocked */
+        }
+    </style>
 @endsection
 
 @section('content')
 <div class="tf-slideshow slider-style2 slider-effect-fade">
     <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1" data-centered="false" data-space="0" data-space-mb="0" data-loop="true" data-auto-play="false">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper slider">
             <div class="swiper-slide">
                 <div class="wrap-slider">
-                    <img src="https://ounass-ae.atgcdn.ae/contentful/b3xlytuyfm3e/3pDpBQXmGk8YdRBEfJQYoT/058171b7fb838f623d79d6156476563b/Fashion_Jewellery_APP_PLP_Banner.jpg?q=70" alt="fashion-slideshow">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline src="{{ url('frontend/videos/web-video.mp4') }}" alt="fashion-slideshow"></video>
+                    </div>
                     <div class="box-content">
                         <div class="container">
                             <div class="content-slider">
@@ -31,42 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="wrap-slider">
-                    <img src="https://t4.ftcdn.net/jpg/05/27/71/81/360_F_527718147_x7XDK929xZnZqjgh0oPYz7xK0EvtnlIF.jpg" alt="fashion-slideshow">
-                    <div class="box-content">
-                        <div class="container">
-                            <div class="content-slider">
-                                <div class="box-title-slider">
-                                    <div class="fade-item fade-item-1 heading title-display">Wedding Rings</div>
-                                    <p class="fade-item fade-item-2 body-text-1">Quick! Grab limited-time deals before they’re gone.</p>
-                                </div>
-                                <div class="fade-item fade-item-3 box-btn-slider">
-                                    <a href="shop-default-grid.html" class="tf-btn btn-fill btn-white"><span class="text">Shop Sale</span><i class="icon icon-arrowUpRight"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="wrap-slider">
-                    <img src="https://www.limelight.pk/cdn/shop/collections/1200x330-Jewelry.webp?v=1674559019" alt="fashion-slideshow">
-                    <div class="box-content">
-                        <div class="container">
-                            <div class="content-slider">
-                                <div class="box-title-slider">
-                                    <div class="fade-item fade-item-1 heading title-display">Handcrafted Elegance</div>
-                                    <p class="fade-item fade-item-2 body-text-1">Experience the artistry of our handcrafted jewelry collection. Browse today!</p>
-                                </div>
-                                <div class="fade-item fade-item-3 box-btn-slider">
-                                    <a href="shop-default-grid.html" class="tf-btn btn-fill btn-white"><span class="text">Shop New</span><i class="icon icon-arrowUpRight"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div class="wrap-pagination">
@@ -274,8 +267,8 @@
                     <div class="card-product wow fadeInUp" data-wow-delay="0.2s">
                         <div class="card-product-wrapper">
                             <a href="product-detail.html" class="product-img">
-                                <img class="lazyload img-product" data-src="{{ url('frontend/images/products/jewelry/jewelry-6.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-6.jpg') }}" alt="image-product">
-                                <img class="lazyload img-hover" data-src="{{ url('frontend/images/products/jewelry/jewelry-7.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-7.jpg') }}" alt="image-product">
+                                <img class="lazyload img-product" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="image-product">
+                                <img class="lazyload img-hover" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="image-product">
                             </a>                                    
                             <div class="list-product-btn">
                                 <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -307,11 +300,11 @@
                             <ul class="list-color-product">
                                 <li class="list-color-item color-swatch active line">
                                     <span class="swatch-value bg-light-green"></span>
-                                    <img class="lazyload" data-src="{{ url('frontend/images/products/jewelry/jewelry-6.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-6.jpg') }}" alt="image-product">
+                                    <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="image-product">
                                 </li>
                                 <li class="list-color-item color-swatch">
                                     <span class="swatch-value bg-light-grey"></span>
-                                    <img class="lazyload" data-src="{{ url('frontend/images/products/jewelry/jewelry-7.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-7.jpg') }}" alt="image-product">
+                                    <img class="lazyload" data-src="{{ url('frontend/images/products/jewellery/1.jpg') }}" src="{{ url('frontend/images/products/jewellery/1.jpg') }}" alt="image-product">
                                 </li>
                                 
                             </ul>
@@ -380,8 +373,8 @@
                         <div class="card-product card-product-size wow fadeInUp" data-wow-delay="0s">
                             <div class="card-product-wrapper">
                                 <a href="product-detail.html" class="product-img">
-                                    <img class="lazyload img-product" data-src="{{ url('frontend/images/products/jewelry/jewelry-11.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-11.jpg') }}" alt="image-product">
-                                    <img class="lazyload img-hover" data-src="{{ url('frontend/images/products/jewelry/jewelry-12.jpg') }}" src="{{ url('frontend/images/products/jewelry/jewelry-12.jpg') }}" alt="image-product">
+                                    <img class="lazyload img-product" data-src="{{ url('frontend/images/products/jewellery/2.jpg') }}" src="{{ url('frontend/images/products/jewellery/2.jpg') }}" alt="image-product">
+                                    <img class="lazyload img-hover" data-src="{{ url('frontend/images/products/jewellery/2.jpg') }}" src="{{ url('frontend/images/products/jewellery/2.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="variant-wrap size-list">
                                     <ul class="variant-box">
@@ -553,5 +546,4 @@
 @endsection
 
 @section('js')
-
 @endsection
