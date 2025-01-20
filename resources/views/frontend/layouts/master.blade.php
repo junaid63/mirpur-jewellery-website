@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ url('frontend/css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url('frontend/css/styles.css') }}"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     @yield('css')
 
     <!-- Favicon and Touch Icons  -->
