@@ -3,7 +3,7 @@
     * Name: Modave - Multipurpose eCommerce
     * Version: 1.0.1
     * Author: Themesflat
-    * Author URI: http://themesflat.com 
+    * Author URI: http://themesflat.com
 
 	* Abstracts variable
 
@@ -39,7 +39,7 @@
 /*--------- Abstracts variable ---------- */
 @import url(bootstrap-select.min.css);
 :root {
-  --primary: #E43131;
+  --primary: #DAA428;
   --main: #181818;
   --secondary: #4D4E4F;
   --secondary-2:#A0A0A0;
@@ -1409,7 +1409,7 @@ a:focus, a:hover {
   background-color: var(--primary);
 }
 
-/* Preload 
+/* Preload
 ------------------------------------------- */
 .preload-wrapper .preload-container {
   display: flex;
@@ -3499,7 +3499,7 @@ footer.has-pb {
 }
 
 .slider-style2 .box-content {
-  top: 50%;
+  top: 35%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -7388,7 +7388,7 @@ form .cols > * {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  height: 400px;
+  /* height: 400px; */
 }
 .collection-social .img-style {
   display: block;
